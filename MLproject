@@ -1,0 +1,9 @@
+# name: "Elastice Regression project"
+name: "Elastic Regression project"
+conda_env: conda.yaml
+entry_points:
+    main:
+        command: "python train.py"
+        parameters:
+            alpha: {type: float, default: 0.5}
+            l1_ratio: {type: float, default: 0.5}
